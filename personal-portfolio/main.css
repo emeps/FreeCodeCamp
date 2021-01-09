@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #51B0EB;
+    box-sizing: border-box;
+}
+header{
+    /* display: flex;
+    flex-direction: row-reverse ;
+    align-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 0;
+    background-color: #4247EB;
+    box-shadow:0 6px 5px #ebae59e6 ;
+    height: 60px;
+    width: 100%;
+}
+
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    float: right;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0px 30px;
+}
+header nav ul li a{
+    padding: 8px;
+    text-decoration: none;
+    color:#E4D5F0;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+#welcome-section{
+    display: flex;
+    flex-direction: row;
+}
+#welcome-text{ 
+    width: 50%;
+    height: 600px;
+}
+#welcome-text h1{
+    text-align: center;
+    padding: 250px 0;
+}
+#welcome-text h1 q{
+    color: #E4D5F0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+    font-size: 35px;
+}
+#welcome-image{
+    width: 50%;
+    height: 600px;
+}
+#welcome-image img{
+   margin: 50px 100px;
+}
+@media (max-width: 850px){
+    #welcome-image{
+        display: none;
+    }
+    #welcome-text{ 
+        width: 100%;
+    }
+    #welcome-text h1{
+        text-align: center;
+        padding: 185px 0;
+    }
+    header{
+        justify-content: center;
+    }
+}
