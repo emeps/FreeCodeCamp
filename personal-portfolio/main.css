@@ -1,22 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro:wght@600&display=swap');
+:root{
+    --bgHd:#4247EB;
+    --sdHd: #ebae59e6;
+    --colorTXT: #E4D5F0;
+    --boxIMG:#FFF;
+    --boxTXT:#EBAE59;
+    
+}
+/* Default settings */ 
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 15px;
 }
 body{
     background-color: #51B0EB;
     box-sizing: border-box;
 }
+
+/* Navbar section */
 header{
-    /* display: flex;
-    flex-direction: row-reverse ;
-    align-items: center; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-top: 0;
-    background-color: #4247EB;
-    box-shadow:0 6px 5px #ebae59e6 ;
+    background-color: var(--bgHd);
+    box-shadow:0 6px 5px var(--sdHd) ;
     height: 60px;
     width: 100%;
 }
@@ -33,10 +44,9 @@ header nav ul li{
 header nav ul li a{
     padding: 8px;
     text-decoration: none;
-    color:#E4D5F0;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
+    color:var(--colorTXT);
 }
+/* Introduction section */
 #welcome-section{
     display: flex;
     flex-direction: row;
@@ -47,10 +57,11 @@ header nav ul li a{
 }
 #welcome-text h1{
     text-align: center;
-    padding: 250px 0;
+    padding: 230px 0;
+    margin: 0 80px;
 }
 #welcome-text h1 q{
-    color: #E4D5F0;
+    color: var(--colorTXT);
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
     font-size: 35px;
@@ -62,7 +73,54 @@ header nav ul li a{
 #welcome-image img{
    margin: 50px 100px;
 }
+
+/* Projects section */
+#projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.project-title{
+    width: 350px;
+    height: 60px;
+    border-radius: 0  40px 40px 0;
+    color: var(--colorTXT);
+}
+.project-title h1{
+    width: inherit;
+}
+.project-img > img{
+    width: 250px;
+    
+}
+.project-tile{
+    background-color: var(--boxIMG);
+    width: 350px;
+    height: 350px;
+    margin: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.project-img{
+    width: 250px;
+    height: 60px;
+}
+.project-box-title{
+    background-color: var(--boxTXT);
+    height: 60px;
+}
+.project-box-title span{
+    font-size: 20px;
+}
+.project-box-title a{
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+}
 @media (max-width: 850px){
+    header{
+        justify-content: center;
+    }
     #welcome-image{
         display: none;
     }
@@ -72,8 +130,5 @@ header nav ul li a{
     #welcome-text h1{
         text-align: center;
         padding: 185px 0;
-    }
-    header{
-        justify-content: center;
     }
 }
