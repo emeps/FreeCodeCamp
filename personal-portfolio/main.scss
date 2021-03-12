@@ -1,0 +1,84 @@
+// Imports
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+// Variaveis
+$color-bar: #4247eb;
+$color-bar-shadow: #ebae59;
+$color-footer: #181943;
+$color-text: #e4d5f0;
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #51b0eb;
+}
+header {
+    nav {
+        background-color: $color-bar;
+        height: 10vh;
+        width: 100%;
+        min-width: 353px;
+        box-shadow: 2px 2px 2px $color-bar-shadow;
+    }
+}
+nav {
+    ul {
+        list-style-type: none;
+        float: right;
+    }
+    li {
+        float: left;
+        padding: 20px;
+        margin-right: 100px;
+        box-sizing: border-box;
+        a {
+            display: block;
+            text-decoration: none;
+            color: $color-text;
+            font-family: "Source Sans Pro", "sans-serif";
+            font-weight: 800;
+        }
+    }
+}
+#introduction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    #introduction-img {
+        margin: 0 auto;
+        padding: 2rem 0 3rem 0;
+    }
+    #introduction-phrase {
+        font-size: 3rem;
+        color: $color-text;
+        margin: 0 auto;
+        padding: 10rem 3rem;
+        span {
+            display: block;
+        }
+    }
+}
+#projects {
+    .navbar .navbar-space {
+    }
+}
+@media screen and (max-width: 800px) {
+    nav {
+        ul {
+            float: right;
+        }
+    }
+    #introduction {
+        display: flex;
+        justify-content: center;
+        #introduction-img {
+            display: none;
+        }
+        #introduction-phrase {
+            width: 100%;
+            span {
+                text-align: center;
+            }
+        }
+    }
+}
