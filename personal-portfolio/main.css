@@ -5,15 +5,15 @@
 }
 
 body {
-  background-color: #51B0EB;
+  background-color: #51b0eb;
 }
 
 header nav {
-  background-color: #4247EB;
+  background-color: #4247eb;
   height: 10vh;
   width: 100%;
   min-width: 353px;
-  box-shadow: 2px 2px 2px #EBAE59;
+  box-shadow: 2px 2px 2px #ebae59;
 }
 
 nav ul {
@@ -29,7 +29,7 @@ nav li {
 nav li a {
   display: block;
   text-decoration: none;
-  color: #E4D5F0;
+  color: #e4d5f0;
   font-family: "Source Sans Pro", "sans-serif";
   font-weight: 800;
 }
@@ -41,16 +41,61 @@ nav li a {
 }
 #introduction #introduction-img {
   margin: 0 auto;
-  padding-top: 2rem;
+  padding: 2rem 0 3rem 0;
 }
 #introduction #introduction-phrase {
   font-size: 3rem;
-  color: #E4D5F0;
+  color: #e4d5f0;
   margin: 0 auto;
   padding: 10rem 3rem;
 }
 #introduction #introduction-phrase span {
   display: block;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding: 75px;
+}
+#projects .projects-tiles {
+  border-radius: 15px;
+  background-color: #FFF;
+  height: 350px;
+  width: 320px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+#projects .projects-tiles .project-img {
+  height: 200px;
+  width: 300px;
+  margin: 0 auto;
+}
+#projects .projects-tiles .project-img img {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin-top: 25%;
+}
+#projects .projects-tiles .project-title {
+  width: 100%;
+  background-color: #ebae59;
+  border-radius: 0 0 15px 15px;
+  box-sizing: border-box;
+}
+#projects .projects-tiles .project-title a {
+  display: block;
+  line-height: 3.7;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Source Sans Pro", "sans-serif";
+  font-weight: 800;
+  width: 100%;
+  color: #121212;
+  max-height: 10px;
 }
 
 @media screen and (max-width: 800px) {
